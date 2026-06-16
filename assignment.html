@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB ASSIGNMENT</title>
+    <style>
+        /* Guud ahaan boga iyo midabka dambe (Background) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a9d4f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Weelka weyn ee koobaya boga (Main Container) */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Qaybta Sare (Header) */
+        header {
+            background-color: #1e4f8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Qaabeynta labada dhinac (Sidebar + Main Content) */
+        .wrapper {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            min-height: 450px;
+        }
+
+        /* Menu-ga Bidix (Sidebar) */
+        nav {
+            background-color: #ffffff;
+            padding: 30px 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #0000cd;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Qaybta Dhexda ee Qoraalka (Main Content) */
+        main {
+            background-color: #e6f2ff;
+            padding: 25px;
+        }
+
+        /* Banner-ka dhexda ku jira ee xariiqda dushaq leh */
+        .banner {
+            border: 3px dashed #f0dc82;
+            background-color: #1e4f8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Qaybta qoraalka iyo sawirka garsooraha */
+        .article {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .article img {
+            width: 150px;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        .article p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Qaybta dalalka (List Section) */
+        .countries-section h3 {
+            color: #1a0dab;
+            border-bottom: 3px solid #1e4f8a;
+            padding-bottom: 5px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 2px -2px rgba(0,0,0,0.5);
+        }
+
+        .countries-section ul {
+            padding-left: 20px;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        /* Qaybta Hoose (Footer) */
+        footer {
+            background-color: #15325c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-style: italic;
+            border-top: 4px solid #c8a2c8; /* Xariiqda khafiifka ah ee footer-ka dushooda */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Qaybta Sare -->
+        <header>
+            Kuso Dhowow LAB ASSINGMENT
+        </header>
+
+        <!-- Qaybta Dhexe -->
+        <div class="wrapper">
+            <!-- Menu-ga Bidix -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </nav>
+
+            <!-- Qoraalka iyo Sawirada -->
+            <main>
+                <div class="banner">
+                    Kuwo Dhowow warka caalamka
+                </div>
+
+                <div class="article">
+                    <!-- FIIRO GAAR AH: Halkaan gali magaca sawirkaaga haddii uu kombuyuutarka kuugu jiro -->
+                    <img src="artan.jpeg" alt="Garsoore Cumar Cartan">
+                    <p>
+                        Garsoore Cumar Cartan ayaa naqday shaqsiga ugu hadal haynta badan caalamka saacadihii lasoo dhaafay ka dib marki loo diiday in uu galo dalka maraykanka sabab aan ilaa iyo hada la cadayn.<br>
+                        waxa kaliya ee la sheegay ama dadku u qaaten ayaa ah in uu ka yimid dalka somalia oo uu sitay passport somali waliba nuuca dadka gaar ka ah la siiyo
+                    </p>
+                </div>
+
+                <div class="countries-section">
+                    <h3>Qaar ka mid ah dalalka ka qeyb galaayo koobka aduunka</h3>
+                    <ul>
+                        <li>Maraykan</li>
+                        <li>ingiriiska</li>
+                        <li>iiraan</li>
+                        <li>iyo kowo kale oo badan</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+
+        <!-- Qaybta Hoose -->
+        <footer>
+            &copy;CNS253
+        </footer>
+    </div>
+
+</body>
+</html>
